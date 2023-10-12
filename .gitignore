@@ -1,3 +1,3 @@
-media-service/.public/images/
+media-service/public/images/
 media-service/node_modules
 api-gateway/node_modules
