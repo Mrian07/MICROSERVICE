@@ -38,7 +38,7 @@ module.exports = async (req, res) => {
 
   res.json({
     status: "success",
-    date: {
+    data: {
       id: users.id,
       email: users.email,
       name: users.name,
