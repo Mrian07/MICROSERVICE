@@ -24,7 +24,7 @@ module.exports = async (req, res) => {
   if (!users) {
     return res.status(400).json({
       status: "error",
-      message: "user not found",
+      message: "users not found",
     });
   }
 
@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
   if (!cekpwd) {
     return res.status(400).json({
       status: "error",
-      message: "user not found",
+      message: "users not found",
     });
   }
 
