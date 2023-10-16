@@ -7,7 +7,7 @@ const api = apiAdapter(URL_SERVICE_USERS);
 module.exports = async (req, res) => {
   try {
     const id = req.user.data.id;
-    const users = await api.put(`users/update/${id}`, req.body);
+    const users = await api.post(`users/logout`, { users_id: id });
     return res.json(req.user);
   } catch (error) {
     if (error.code === "ECONNREFUSED") {
